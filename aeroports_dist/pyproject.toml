@@ -1,0 +1,21 @@
+[project]
+name = "aeroports-dist"
+version = "0.1.0"
+description = ""
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "streamlit (>=1.45.1,<2.0.0)",
+    "pandas (>=2.3.0,<3.0.0)",
+    "numpy (>=2.3.0,<3.0.0)",
+    "folium (>=0.20.0,<0.21.0)",
+    "streamlit-folium (>=0.25.0,<0.26.0)"
+]
+
+[tool.poetry]
+packages = [{include = "aeroports_dist", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
